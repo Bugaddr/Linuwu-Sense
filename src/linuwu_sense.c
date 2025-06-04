@@ -3547,10 +3547,12 @@ enum acer_wmi_predator_v4_oc {
  };
  /* nitro sense attributes */
  static struct attribute *nitro_sense_attrs[] = {
+     &lcd_override.attr,
      &fan_speed.attr,
      &battery_limiter.attr,
      &battery_calibration.attr,
      &usb_charging.attr,
+     &backlight_timeout.attr,
      NULL
  }; 
  static struct attribute_group nitro_sense_attr_group = {
